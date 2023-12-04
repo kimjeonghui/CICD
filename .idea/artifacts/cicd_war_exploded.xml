@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cicd:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cicd_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cicd" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="cicd/web/Web" />
+    </root>
+  </artifact>
+</component>
