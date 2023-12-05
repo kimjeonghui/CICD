@@ -15,7 +15,7 @@ FROM tomcat:9.0-jdk11-corretto
 WORKDIR /usr/local/tomcat/webapps
 
 # Copy the WAR file from the builder stage
-COPY --from=builder /usr/src/app/target/jenkins.war ./ROOT.war
+COPY --from=builder cicd/target/jenkins.war ./ROOT.war
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
